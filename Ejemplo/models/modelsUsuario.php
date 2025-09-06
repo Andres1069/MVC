@@ -11,19 +11,28 @@ class Usuario{
         return $this->nombre;
     }
 
+<<<<<<< HEAD
         function getApellidos(){
+=======
+    function getApellidos(){
+>>>>>>> 1b2eee94363f018b4a29983c991338fc1b04bf24
         return $this->apellidos;
     }
 
     function getEmail(){
         return $this->email;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 1b2eee94363f018b4a29983c991338fc1b04bf24
     function getPassword(){
         return $this->password;
     }
 
     function setNombre($nombre){
+<<<<<<< HEAD
         $this->nombre = $nombre;
     }
 
@@ -46,4 +55,20 @@ class Usuario{
         echo 'Imprimiendo todos los usuarios ...';
     }
 
+=======
+        return $this->nombre;
+    }
+
+    function setApellidos($apellidos){
+        return $this->apellidos;
+    }
+
+    function setEmail($email){
+        return $this->email;
+    }
+    
+    function setPassword($password){
+        return $this->password;
+    }
+>>>>>>> 1b2eee94363f018b4a29983c991338fc1b04bf24
 }

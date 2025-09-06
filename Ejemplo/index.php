@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Bienvenido a mi Web</h1>
 
 <?php
@@ -26,3 +27,6 @@ if(isset($nombre_controlador) && class_exists($nombre_controlador)){
 
 // $controlador->crear();
 
+=======
+<h1>Bienvenido a mi WEB</h1>
+>>>>>>> 1b2eee94363f018b4a29983c991338fc1b04bf24
