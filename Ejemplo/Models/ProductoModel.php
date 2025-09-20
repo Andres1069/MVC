@@ -24,3 +24,4 @@ class Producto{
         echo "Imprimir todos los productos....";
     }
 }
+

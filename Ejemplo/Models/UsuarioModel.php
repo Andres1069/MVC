@@ -16,6 +16,10 @@ class Usuario
     {
         $this->db = database::conectar();
     }
+        function getId_usuario()
+    {
+        return $this->id_usuario;
+    }
 
     function getNombre()
     {
@@ -39,24 +43,28 @@ class Usuario
 
     //Set
 
+    function setId_usuario($id_usuario)
+    {
+        return $this->id_usuario=$id_usuario;
+    }
     function setNombre($nombre)
     {
-        return $this->nombre;
+        return $this->nombre=$nombre;
     }
 
     function setApellidos($apellidos)
     {
-        return $this->apellidos;
+        return $this->apellidos=$apellidos;
     }
 
     function setEmail($email)
     {
-        return $this->email;
+        return $this->email=$email;
     }
 
     function setPassword($password)
     {
-        return $this->password;
+        return $this->password=$password;
     }
 
     //Metodo que consulte la BD
@@ -67,6 +75,18 @@ class Usuario
         return $query;
 
         echo 'Imprimiendo todos los usuarios.....';
+    }
+
+    public function crear(){
+        $sql = "INSERT INTO t_usuario (id_usuario,nombre,apellido,correo,password, id_rol) 
+        VALUES({$this->id_usuario},'{$this->nombre}','{$this->apellidos}', '{$this->email}', '{$this->password}', 2);";
+        
+
+        $guardar = $this->db->query($sql);
+
+        return $guardar;
+
+        // var_dump($sql);
     }
 
     
